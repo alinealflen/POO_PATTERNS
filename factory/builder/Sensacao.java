@@ -17,4 +17,10 @@ public class Sensacao implements IPizza{
 	public String getSabor() {
 		return "Sensação";
 	} 
+	
+	@Override
+	public String toString() {
+		return "Sensacao - Ingredientes= " + getIngredientes() + ", Sabor= " + getSabor();
+	} 
+	
 }

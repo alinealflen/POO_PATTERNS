@@ -18,4 +18,10 @@ public class DoisAmores implements IPizza {
 	public String getSabor() {
 		return "Dois Amores";
 	} 
+	
+	@Override
+	public String toString() {
+		return "Dois Amores - Ingredientes= " + getIngredientes() + ", Sabor= " + getSabor();
+	} 
+	
 }

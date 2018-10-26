@@ -19,6 +19,12 @@ public class QuatroQueijos implements IPizza{
 	@Override
 	public String getSabor() {
 		return "Quatro Queijos";
+	}
+
+	@Override
+	public String toString() {
+		return "Quatro Queijos - Ingredientes= " + getIngredientes() + ", Sabor= " + getSabor();
 	} 
+	
 
 }
