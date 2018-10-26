@@ -20,7 +20,7 @@ public class Sensacao implements IPizza{
 	
 	@Override
 	public String toString() {
-		return "Sensacao - Ingredientes= " + getIngredientes() + ", Sabor= " + getSabor();
+		return "Sensação - Ingredientes= " + getIngredientes() + ", Sabor= " + getSabor();
 	} 
 	
 }

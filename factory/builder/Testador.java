@@ -12,19 +12,30 @@ public class Testador {
 	
 		IPizza pizza1 = pp.montar("Quatro Queijos");
 	
-		System.out.println(pizza1.getSabor() +" - Ingredientes: "+ pizza1.getIngredientes());
+		//System.out.println(pizza1.getSabor() +" - Ingredientes: "+ pizza1.getIngredientes());
 		
-		//builder:
+		IPizza pizza2 = pp.montar("Dois Amores");
+		IPizza pizza3 = pp.montar("Sensação");
 		
-		Pedido pedido = new Pedido(pizza1, "Gabriel", "R$ 30,00");
+		Pedido pedido = new Pedido(pizza1, "Gabriel", "R$ 60,00");
 		PedidoBuilder pb = new PedidoBuilder(pedido);
 		
 		pb
 			.endereco("Rua das Flores")
 			.observacao("Cliente chato")
-			.pizza(pizza1);
+			.pizza(pizza2);
 		
 		System.out.println(pedido);
+		
+		Pedido pedido2 = new Pedido(pizza3, "Aline", "25,00");
+		PedidoBuilder pb2 = new PedidoBuilder(pedido2);
+		
+		pb2
+		.endereco("Rua Morro do Pico")
+		.observacao("Levar troco para 50.00");
+		
+		System.out.println(pedido2);
+		
 	
 	}
 
