@@ -1,3 +1,3 @@
 # POO_PATTERNS
 
-Aluno: Aline Alflen e Gabriel Bertollo
+### Alunos: Aline Alflen e Gabriel Bertollo
